@@ -1,0 +1,14 @@
+#+title: Contrib Sort
+#+author: Joseph Raub
+#+date: <2022-12-15 Thu>
+
+
+* Run
+On a system with nix flakes enabled
+#+begin_shell
+nix run github:raubjo/contrib-sort
+#+end_shell
+Without nix flakes enabled
+#+begin_shell
+nix run --experimental-features 'nix-command flakes' github:raubjo/contrib-sort
+#+end_shell

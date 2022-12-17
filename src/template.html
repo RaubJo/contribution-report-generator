@@ -1,0 +1,180 @@
+<html>
+<head>
+</head>
+    <body height="100%">
+      <div id="header" style="page-break-after:avoid;">
+        <!--<div id="return_address" align="left">
+          <p>New Heights Baptist Church <br> 340 Hooper Rd. <br> Wylie, Tx</p>
+        </div> --
+          -->
+        <div id="logo" align="center">
+          <img src="../assets/logo.png" width="100" height="100" />
+        </div>
+        <div id="date" align="right">
+          <p>Statement Date: %%STATEMENT_DATE%% </p>
+        </div>
+        <div id="name" align="left">
+          <p>Contribution record for: <span style="font-weight:bold;">%%CONTRIBUTER_NAME%%</span></p>
+      <div style="page-break-inside:avoid">
+      <div id="preface" align="left" style="page-break-after:avoid;">
+      <p> Thank you for faithfully supporting New Heights Baptist Church through your tithes and offerings this past year. We've included a detail of your contributions from <span style="font-weight:bold;">%%YEAR_BEGIN_DATE%%</span> to <span style="font-weight:bold;">%%YEAR_END_DATE%%</span> in this letter. Your total gifts during this time are: <span style="font-weight:bold;">%%TOTAL_CONTRIBUTIONS%%</span></p>
+      </div>
+      </div>
+      <table width="100%" style="page-break-before:avoid;">
+        <tr>
+        <td width="50%" align="center">
+          <div id="tithe">
+            <h4 align="center">Tithes</h4>
+            <table>
+              <tr>
+                <th>Date</th>
+                <th>Amount</th>
+              </tr>
+              %%TITHE_DATA_ROWS%%
+              <tr class="totals">
+                <td><p>Total Tithes: </p></td>
+                <td align="right"><span>%%TOTAL_TITHES%%</span></td>
+              </tr>
+            </table>
+           </div>
+        </td>
+        <td width="50%" align="center">
+          <div class="tables" id="missions" >
+            <h4 align="center">Missions</h4>
+            <table>
+              <tr>
+                <th>Date</th>
+                <th>Amount</th>
+              </tr>
+              %%MISSIONS_DATA_ROWS%%
+              <tr class="totals">
+                <td><p>Total Missions: </p></td>
+                <td align="right"><span>%%TOTAL_MISSIONS%%</span></td>
+              </tr>
+            </table>
+          </div>
+        </td>
+        </tr>
+      </table>
+      </div>
+      <table width="100%" style="page-break-before:always;">
+        <tr>
+          <td width="50%" align="center">
+            <div class="tables" id="building">
+            <h4 align="center">Building</h4>
+            <table>
+              <tr>
+                <th>Date</th>
+                <th>Amount</th>
+              </tr>
+              %%BUILDING_DATA_ROWS%%
+              <tr class="totals">
+                <td><p>Total Building: </p></td>
+                <td align="right"><span>%%TOTAL_BUILDING%%</span></td>
+              </tr>
+            </table>
+          </div>
+          </td>
+          <td width="50%" align="center">
+            <div class="tables" id="special">
+            <h4 align="center">Special</h4>
+            <table>
+              <tr>
+                <th>Date</th>
+                <th>Amount</th>
+              </tr>
+              %%SPECIAL_DATA_ROWS%%
+              <tr class="totals">
+                <td><p>Total Special: </p></td>
+                <td align="right"><span>%%TOTAL_SPECIAL%%</span></td>
+              </tr>
+            </table>
+
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <div id="sufface" align="left">
+        <p>We know that God rewards faithful stewards and so we look forward to seeing God's blessings on your life. We will work to be a faithful steward of the finances of NHBC and pray for God's continued leading, power, and protection.</p>
+        <p> Sincerely, <br> Pastor Steve Foster  Philippians 4:19</p>
+        <img src="../assets/signature.jpg"/>
+      </div>
+
+      <div id="footer" align="left">
+        <p style="font-size: x-small;"> Per IRS regulations, we hereby state that no goods or services were received in exchange for this donation. New Height Baptist Church is a 501(c)3 corporation. </p>
+      </div>
+    </body>
+    <style>
+      @page {
+	      size: portrait;
+      }
+      html, body {
+	      margin: 0;
+	      padding: 0;
+	      border: 0;
+	      font-size: 100%;
+	      font-family: "Robotot", sans-serif;
+	      font-weight: 300;
+	      vertical-align: baseline;
+	      height: 100vh;
+      }
+      h1, h2, h3, h4, .h1, .h2, .h3, .h4, p {
+	      margin: 0;
+      }
+      h3, h4, .h4 {
+	      font-weight: 300:
+      }
+      h1, h2, .h1, .h2, .h3, strong {
+	      font-weight: 700;
+      }
+      img {
+	      -webkit-filter: grayscale(100%);
+	      filter: grayscale(100%);
+      }
+      .table {
+	      page-break-inside: auto;
+	      page-break-before: auto;
+	      page-break-after: auto;
+      }
+      .table thead {
+	      display: table-header-group;
+	      break-inside: avoid;
+	      page-break-inside: avoid;
+	      page-break-before: auto;
+	      page-break-after: auto;
+      }
+      .table tbody {
+	      display: table-row-group;
+	      break-inside: auto;
+              page-break-inside: auto;
+	      page-break-before: auto;
+	      page-break-after: auto;
+      }
+      .table tbody tr {
+              page-break-inside: avoid;
+	      page-break-before: auto;
+	      page-break-after: auto;
+      }
+
+
+	
+
+      div {
+          page-break-before:avoid;
+          page-break-after:avoid;
+          page-break-inside:avoid;
+      }
+      table {
+          page-break-inside:auto;
+          page-break-before:avoid;
+          page-break-after:avoid;
+      }
+      tr {
+          page-break-inside: auto;
+      }
+      tr.totals {
+        font-weight:bold;
+      }
+    </style>
+</html>
