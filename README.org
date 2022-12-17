@@ -5,10 +5,10 @@
 
 * Run
 On a system with nix flakes enabled
-#+begin_shell
-nix run github:raubjo/contrib-sort
-#+end_shell
+``` code
+nix run github:raubjo/contribution-report-generator
+``` 
 Without nix flakes enabled
-#+begin_shell
-nix run --experimental-features 'nix-command flakes' github:raubjo/contrib-sort
-#+end_shell
+``` code
+nix run --experimental-features 'nix-command flakes' github:raubjo/contribution-report-generator
+```
