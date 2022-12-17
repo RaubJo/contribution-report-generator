@@ -5,10 +5,10 @@
 
 * Run
 On a system with nix flakes enabled
-``` code
+``` console
 nix run github:raubjo/contribution-report-generator
 ``` 
 Without nix flakes enabled
-``` code
+``` console
 nix run --experimental-features 'nix-command flakes' github:raubjo/contribution-report-generator
 ```
