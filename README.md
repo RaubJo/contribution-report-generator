@@ -10,3 +10,5 @@ nix run --experimental-features 'nix-command flakes' github:raubjo/contribution-
 ```
 Or
 clone the repo and run main.py from cli
+
+Calling wkhtmltopdf from pdfkit doesn't allow wkhtmltopdf to get the logo.png or other image files. To work around this I base64 encoded them and pasted the result into the template.html file.
